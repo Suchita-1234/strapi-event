@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cultural_events",
+  "info": {
+    "singularName": "cultural-event",
+    "pluralName": "cultural-events",
+    "displayName": "Cultural-event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Recurrence": {
+      "type": "enumeration",
+      "enum": [
+        "daily",
+        "weekly",
+        "monthly"
+      ]
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Venue": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Ticket_Price": {
+      "type": "float"
+    },
+    "Capacity": {
+      "type": "biginteger"
+    }
+  }
+}
